@@ -16,7 +16,7 @@ const appName = "x-ray-sample-back-k8s"
 
 func init() {
 	xray.Configure(xray.Config{
-		DaemonAddr:     "xray-service.default:2000",
+		DaemonAddr:     "xray-service.observability:2000",
 		LogLevel:       "info",
 	})
 }
